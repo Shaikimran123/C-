@@ -1,0 +1,33 @@
+What is C++?
+      
+      C++ is a cross-platform language that can be used to create high-performance applications.
+      
+      C++ was developed by Bjarne Stroustrup, as an extension to the C language.
+      
+      C++ gives programmers a high level of control over system resources and memory.
+
+Difference between C and C++
+
+      The main difference between C and C++ is that C++ support classes and objects, while C does not.\
+
+
+
+Let's create our first C++ file.
+
+      #include <iostream>
+      using namespace std;
+      
+      int main() {
+        cout << "Hello World!";
+        return 0;
+      }
+
+ #include-->Directive is used to include a library or header file inur program.
+         -->it allows you to use functions, classes defined in that file.
+         -->Directive= is a stmt provides instractions to the compiler, and it guides the compilation process.
+using namespace std: stmt allows you to access the standard library without explectly specifying the std:: prefix for every element from the standardd library that you use in ur cole.
+main is method that is used to execute you code.
+cout is function to display the output.
+
+
+
