@@ -1,0 +1,51 @@
+-----------------bubbole sort------------------
+
+public class Main{
+    
+    public static void printArr(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]);
+        }
+    }
+	public static void main(String[] args) {
+
+    
+    /* 
+    7 8 3 1 2
+    bubble sort 
+    find the largest element and place it at the end of the list or array
+    swap the corresponding element 
+    
+    1st loop : 7 8 3 2 1
+               7 3 8 2 1 
+               7 3 2 8 1
+               7 3 2 1 8
+    2nd loop : 3 7 2 1 8
+               3 2 7 1 8
+               3 2 1 7 8
+    3rd loop : 2 3 1 7 8
+               2 1 3 7 8
+    4th loop : 1 2 3 7 8
+               
+    
+    */
+    int arr[]={7,8,3,2,1};
+    //time complexity =o(n^2)
+    //bubble sort
+    for(int i=0;i<arr.length-1;i++){
+        for(int j=0;j<arr.length-i-1;j++){
+            if(arr[j]>arr[j+1]){
+                //swap
+                int temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    printArr(arr);
+    
+
+	}
+}
+----------------------------------selection sort--------------------------
+
