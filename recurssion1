@@ -32,3 +32,21 @@ public class Main
 	}
 }
 output-->1 2 3 4 5
+-----------------------------------------------------
+public class Main
+{
+    
+    public static void printnaturalnum(int n){
+        if(n==6){
+            return;
+        }
+        System.out.println(n);
+        printnaturalnum(n+1);
+        
+    }
+	public static void main(String[] args) {
+    int n=1;
+    printnaturalnum(n);
+	}
+}
+output-->1 2 3 4 5
