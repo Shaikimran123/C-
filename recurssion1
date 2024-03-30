@@ -50,3 +50,109 @@ public class Main
 	}
 }
 output-->1 2 3 4 5
+------------------------------------------------------
+sum 
+public class Main
+{
+    
+    public static void printsum(int i,int n,int sum)
+    {
+    if(i==n){
+        sum+=i;
+        System.out.println(sum);
+        return;
+    }    
+    sum+=i;
+    printsum(i+1,n,sum);
+    }
+	public static void main(String[] args) {
+    printsum(1,5,0);
+	}
+}
+------------------------------------------------------------
+factorial 
+public class Main
+{
+    public static int factorial(int n)
+    {
+        if(n==0 || n==1)
+        {
+            return 1;
+        }
+        return n*factorial(n-1);
+    }
+   
+	public static void main(String[] args) {
+    System.out.print(factorial(5));
+	}
+}
+--------------------------------------------------------------
+fib
+public class Main
+{
+ 
+    public static void printfib(int a,int b,int n)
+    {
+        if(n==0){return;}
+        int c=a+b;
+        System.out.println(c);
+        printfib(b,c,n-1);
+    }
+	public static void main(String[] args) {
+    int a=0,b=1,n;
+    System.out.println(a);
+	System.out.println(b);
+	n=5;
+	printfib(a,b,n);
+	}
+}
+-------------------------------------------------------------
+x^n
+anything power 0 is 1
+anything 0 power is 0
+public class Main
+{
+ 
+    public static int powerx(int x,int n)
+    {
+        if(n==0){return 1;}
+        if(x==0){return 0;}
+        return x*powerx(x,n-1);
+    }
+	public static void main(String[] args) {
+    int x=2,n=2;
+    System.out.println(powerx(x,n));
+	}
+}
+----------------------------------------------------------
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main
+{
+    public static void revofstr(String str,int ind)
+    {
+        if(ind==0){
+            System.out.print(str.charAt(ind));
+            return;
+        }
+        
+        System.out.print(str.charAt(ind));
+        revofstr(str,ind-1);
+    }
+	public static void main(String[] args) {
+		String str="immu";
+		revofstr(str,str.length()-1);
+		
+	}
+}
+
+
+-------------------------------------
+
+
