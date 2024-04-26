@@ -1,0 +1,117 @@
+#include <iostream>
+using namespace std;
+
+struct Rectangle
+{
+    int length;
+    int breath;
+};
+
+
+void initializer(Rectangle *r,int l,int b)
+{
+    r->length=l; 
+    r->breath=b;
+}
+
+int area(Rectangle r)
+{
+    return r.length * r.breath;
+}
+
+int perimeter(Rectangle r)
+{
+    return (2*(r.length+r.breath));
+}
+
+int main()
+{
+    int a=0,b=0;
+    Rectangle r={0,0};
+    cin>>a>>b;
+    initializer(&r,a,b);
+    int ar=area(r);
+    std::cout << ar << std::endl;
+    cout<<perimeter(r);
+    return 0;
+}
+
+
+-------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+struct Rectangle
+{
+    int length;
+    int breath;
+
+void initializer(int l,int b)
+{
+    length=l; 
+    breath=b;
+}
+
+int area()
+{
+    return length *breath;
+}
+
+int perimeter()
+{
+    return (2*(length+breath));
+}
+
+};
+
+int main()
+{
+    int a=0,b=0;
+    Rectangle r;
+    cin>>a>>b;
+    r.initializer(a,b);
+    cout<<r.area()<<endl;
+    cout<<r.perimeter()<<endl;
+    return 0;
+}
+
+-----------------------------------
+#include <iostream>
+using namespace std;
+
+class Rectangle
+{
+private:
+    int length;
+    int breath;
+public:
+    void initializer(int l,int b)
+    {
+        length=l; 
+        breath=b;
+    }
+    
+    int area()
+    {
+        return length *breath;
+    }
+    
+    int perimeter()
+    {
+        return (2*(length+breath));
+    }
+
+};
+
+int main()
+{
+    int a=0,b=0;
+    Rectangle r;
+    cin>>a>>b;
+    r.initializer(a,b);
+    cout<<r.area()<<endl;
+    cout<<r.perimeter()<<endl;
+    return 0;
+}
+
+-----------------------------------
